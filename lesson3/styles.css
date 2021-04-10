@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+main{
+    width: 1400px;
+    margin: 0 auto;
+}
+section{
+    width: 1200px;
+    margin: 0 auto;
+}
+.heading{
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    text-align:center;
+    margin-top: 100px;
+    font-size: 36px;
+    font-weight: 400;
+}
+.heading::after{
+    content: ' ';
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    bottom: -34px; /*Сделал 34, потому что в слудющей домашке везде по 34px отступ, а в этой домашке почему-то другое значение. */
+    left: 50%;
+    width: 64px;
+    height: 2px;
+}
+.heading.dark::after{
+    background-color: #E72424;
+}
+.heading.light::after{
+    background-color: #ffffff;
+}
+.headingDescription{
+    color: #86878B;
+    text-align: center;
+    margin-top: 57px;
+}
+.tileWrapper{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 43px;
+}
+.tile{
+    width: 350px;
+}
+.tileImg{
+    width: 70px;
+    height: 70px;
+    margin: 67px auto 0;
+    border: 1px solid #E72424;
+    border-radius: 50%;
+    position: relative;
+}
+.tileImg img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.tileHeading{
+    margin: 30px auto 0;
+    font-size: 20px;  
+    font-weight: 700; 
+    text-align: center; 
+}
+.tileDescription{
+    margin: 16px auto 0;
+    text-align: center;
+}
