@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
+}
+main,
+footer{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.tileSec{
+    padding: 80px 143px 116px;
+}
+.flexColumnContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    font-family: 'Raleway', serif;
+    font-size: 36px;
+    position: relative;
+    font-weight: 400;
+}
+.heading::after{
+    content: '';
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 64px;
+    height: 1px;
+}
+.light{
+    color: #ffffff;
+}
+.heading.dark::after {
+    background: #E72424;
+}
+.heading.light::after{
+    background: #ffffff;
+}
+.headingDescrip{
+    margin-top: 70px;
+    color: #86878B;
+}
+.light + .headingDescrip{
+    font-family: 'Raleway', serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+}
+.tileWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+    width: 100%;
+}
+.tile{
+    width: 350px;
+}
+.tileImg{
+    border: 1px solid #E72424;
+    border-radius: 50%;
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+.tileImg img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.tileHeading{
+   font-size: 20px;
+   color: #333333; 
+   margin-top: 30px;
+}
+.tileDescrip{
+    text-align: center;
+    margin-top: 16px;
+}
+.downloadSection{
+    background-image: url("assets/dawnloadSectionBackground.svg"); 
+    padding: 58px 0 38px;    
+    position: relative;
+}
+.downloadSection::after{
+    content: '';
+    background: rgba(0, 0, 0, .65);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    height: 100%;
+}
+.downloadSection *{
+    z-index: 1;
+}
+.downloadBtn{
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    width: 135px;
+    height: 42px;
+    margin-top: 56px;
+    font-size: 15px;
+    font-weight: 600;
+}
+footer{
+    background-color: #000000;
+    padding: 30px 0 15px;
+}
+.copyright{
+    margin-top: 18px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
